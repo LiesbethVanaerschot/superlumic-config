@@ -18,6 +18,7 @@
         - things
         - sketch
         - superduper
+        - 1password
     - name: create ssh directory
       become: yes
       file:
