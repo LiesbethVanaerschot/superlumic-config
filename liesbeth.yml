@@ -7,20 +7,17 @@
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
-        - spotify
-        - istat-menus
         - dropbox
-        - kaleidoscope
         - alfred
+        - dash
         - hazel
-        - sonos
-        - tower
+        - sketch-toolbox
         - skype
-        - bartender
+        - imageoptim
+        - imagealpha
         - things
         - sketch
         - superduper
-        - vmware-fusion
     - name: create ssh directory
       become: yes
       file:
@@ -57,9 +54,9 @@
     - profile-developer
 
   vars:
-    - computername: spectr
-    - git_user_name: Roderik van der Veer
-    - git_user_email: roderik.van.der.veer@kunstmaan.be
+    - computername: lies
+    - git_user_name: Liesbeth Vanaerschot
+    - git_user_email: liesbeth.vanaerschot@kunstmaan.be
     - sublime_packages:
         - dest: "SideBarEnhancements"
           repo: "https://github.com/titoBouzout/SideBarEnhancements"
